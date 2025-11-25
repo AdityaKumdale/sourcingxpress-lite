@@ -140,17 +140,7 @@ export default function JobListings() {
     const currentJobsPromise = currentTab === 'applied' ? appliedJobsPromise : liveJobsPromise;
 
 
-    // useLayoutEffect(() => {
-    //     const savedPosition = sessionStorage.getItem("jobListScrollY");
-    //     if (savedPosition) {
-    //         window.scrollTo(0, parseInt(savedPosition));
-    //     }else {
-    //         window.scrollTo(0, 0);
-    //     }
-    //     return () => {
-    //         sessionStorage.setItem("jobListScrollY", window.scrollY.toString());
-    //     };
-    // }, []);
+  
 
     
     useEffect(() => {

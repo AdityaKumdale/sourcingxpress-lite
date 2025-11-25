@@ -7,17 +7,26 @@ const TeamSection: React.FC = () => {
       <div className="container mx-auto max-w-7xl">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           
-          {/* 1. Left Side: Image */}
-          <div className="relative w-full h-full min-h-[300px] lg:min-h-[400px] rounded-2xl overflow-hidden shadow-xl">
-            {/* Replace the src below with your local image path */}
+         
+          {/* <div className="relative w-full h-full min-h-[300px] lg:min-h-[400px] rounded-2xl overflow-hidden shadow-xl">
+           
             <img 
               src="/images/team-photo.jpeg" 
               alt="The SourcingXPress Team" 
               className="absolute inset-0 w-full h-full object-cover hover:scale-105 transition-transform duration-500"
             />
+          </div> */}
+
+          <div className="relative w-full   rounded-2xl overflow-hidden shadow-xl">
+           
+            <img 
+              src="/images/team-photo.jpeg" 
+              alt="The SourcingXPress Team" 
+              className="w-full h-auto object-cover hover:scale-105 transition-transform duration-500"
+            />
           </div>
 
-          {/* 2. Right Side: Content */}
+
           <div className="text-left">
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6 leading-tight">
               Meet the Innovators Behind SourcingXPress
